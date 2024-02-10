@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="./images/logo.png" alt="logo">
+    </div>
+    <div class="resultCount">
+        <div>
+            <h2>Player</h2>
+            <span id="plrWin">0</span>
+        </div>
+        <div>
+            <h2>Computer</h2>
+        <span id="compWin">0</span>
+        </div>
+    </div>
+    <div class="btns">
+        <button onclick="play('Rock')"><img class="red-glow" src="./images/rock.png" alt="Rock"></button>
+        <button onclick="play('Paper')"><img class="yellow-glow" src="./images/paper.png" alt="Paper"></button>
+        <button onclick="play('Scissors')"><img class="blue-glow" src="./images/scissors.png" alt="Scissors"></button>
+    </div>
+    <div class="opt">
+        <div>
+            <h2>You Chose:</h2>
+            <span id="plrDisplay"></span>
+        </div>
+        <div>
+            <h2>Comp Chose:</h2>
+            <span id="compDisplay"></span>
+        </div>
+    </div>
+    <div class="result">
+        <h2 id="resultDisplay"></h2>
+    </div>
+    <div class="reset">
+        <button onclick="reset()">Reset</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
